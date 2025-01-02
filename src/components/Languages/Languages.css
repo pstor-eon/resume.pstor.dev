@@ -1,0 +1,152 @@
+.languages {
+  margin-bottom: 4rem;
+}
+
+.languages h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary-light);
+  margin-bottom: 2rem;
+}
+
+.languages.dark h2 {
+  color: var(--text-primary-dark);
+}
+
+.languages-content {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--border-light);
+}
+
+.languages.dark .languages-content {
+  border-left-color: var(--border-dark);
+}
+
+.languages-content::before {
+  display: none;
+}
+
+.languages.dark .languages-content::before {
+  display: none;
+}
+
+.languages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.language-item {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.dark .language-item {
+  border-bottom-color: var(--border-dark);
+}
+
+.language-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.language-name {
+  display: inline;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary-light);
+  margin-right: 0.5rem;
+}
+
+.dark .language-name {
+  color: var(--text-primary-dark);
+}
+
+.language-level {
+  display: inline;
+  color: var(--text-secondary-light);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.dark .language-level {
+  color: var(--text-secondary-dark);
+}
+
+.certification-list {
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.dark .certification-list {
+}
+
+.certification-item {
+  margin-bottom: 0.75rem;
+}
+
+.certification-name {
+  display: inline;
+  font-weight: 600;
+  color: var(--hover-light);
+  margin-right: 0.5rem;
+}
+
+.dark .certification-name {
+  color: var(--hover-dark);
+}
+
+.certification-rating {
+  display: inline;
+  font-weight: 500;
+  color: var(--text-primary-light);
+  margin-bottom: 0.75rem;
+}
+
+.dark .certification-rating {
+  color: var(--text-primary-dark);
+}
+
+.certification-dates {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary-light);
+}
+
+.test-date, .expiration-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.test-date svg, .expiration-date svg {
+  color: var(--hover-light);
+  opacity: 0.8;
+}
+
+.dark .test-date svg,
+.dark .expiration-date svg {
+  color: var(--hover-dark);
+}
+
+@media (max-width: 768px) {
+  .certification-dates {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+.language-header {
+  margin-bottom: 1rem;
+}
+
+.certification-header {
+  margin-bottom: 0.75rem;
+} 

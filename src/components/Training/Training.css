@@ -1,0 +1,186 @@
+.training {
+  margin-bottom: 4rem;
+}
+
+.training h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary-light);
+  margin-bottom: 2rem;
+}
+
+.training.dark h2 {
+  color: var(--text-primary-dark);
+}
+
+.training-content {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--border-light);
+}
+
+.training.dark .training-content {
+  border-left-color: var(--border-dark);
+}
+
+.training-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.training-item:last-child {
+  margin-bottom: 0;
+}
+
+.training-header {
+  margin-bottom: 1rem;
+}
+
+.training-header h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary-light);
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.training.dark .training-header h3 {
+  color: var(--text-primary-dark);
+}
+
+.period {
+  font-size: 0.9rem;
+  color: var(--text-secondary-light);
+  display: block;
+}
+
+.training.dark .period {
+  color: var(--text-secondary-dark);
+}
+
+.training-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.training-details li {
+  color: var(--text-secondary-light);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.training.dark .training-details li {
+  color: var(--text-secondary-dark);
+}
+
+.training-details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--text-secondary-light);
+}
+
+.training.dark .training-details li::before {
+  color: var(--text-secondary-dark);
+}
+
+.training-content::before {
+  content: none;
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: var(--bg-light);
+  border: 2px solid var(--hover-light);
+  transition: all 0.3s ease;
+}
+
+.training.dark .training-content::before {
+  background-color: var(--bg-dark);
+  border-color: var(--hover-dark);
+}
+
+.training-content:hover::before {
+  transform: scale(1.2);
+}
+
+.training-summary {
+  color: var(--text-secondary-light);
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.training.dark .training-summary {
+  color: var(--text-secondary-dark);
+}
+
+.coursera-section {
+  margin-top: 0.5rem;
+}
+
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--hover-light);
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.training.dark .view-more-btn {
+  color: var(--hover-dark);
+}
+
+.view-more-btn:hover {
+  opacity: 0.8;
+}
+
+.coursera-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  border-left: 2px solid var(--border-light);
+  padding-left: 1rem;
+}
+
+.training.dark .coursera-list {
+  border-left-color: var(--border-dark);
+}
+
+.coursera-list li {
+  color: var(--text-secondary-light);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.training.dark .coursera-list li {
+  color: var(--text-secondary-dark);
+}
+
+.coursera-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--text-secondary-light);
+}
+
+.training.dark .coursera-list li::before {
+  color: var(--text-secondary-dark);
+} 

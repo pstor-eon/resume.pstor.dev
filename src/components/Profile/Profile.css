@@ -1,0 +1,159 @@
+.profile {
+  margin-bottom: 4rem;
+}
+
+.profile h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary-light);
+  margin-bottom: 2rem;
+}
+
+.profile.dark h2 {
+  color: var(--text-primary-dark);
+}
+
+.profile-content {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--border-light);
+}
+
+.profile.dark .profile-content {
+  border-left-color: var(--border-dark);
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-primary-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.profile.dark .description {
+  color: var(--text-primary-dark);
+}
+
+.sub-description {
+  font-size: 1rem;
+  color: var(--text-secondary-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.profile.dark .sub-description {
+  color: var(--text-secondary-dark);
+}
+
+.more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--hover-light);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.profile.dark .more-link {
+  color: var(--hover-dark);
+}
+
+.more-link:hover {
+  gap: 0.75rem;
+  opacity: 0.8;
+}
+
+.more-link:active {
+  opacity: 0.6;
+}
+
+.more-link svg {
+  transition: transform 0.3s ease;
+}
+
+.more-link:hover svg {
+  transform: translateX(2px);
+}
+
+.profile-content::before {
+  content: none;
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: var(--bg-light);
+  border: 2px solid var(--hover-light);
+  transition: all 0.3s ease;
+}
+
+.profile.dark .profile-content::before {
+  background-color: var(--bg-dark);
+  border-color: var(--hover-dark);
+}
+
+.profile-content:hover::before {
+  transform: scale(1.2);
+}
+
+.profile-section {
+  margin-bottom: 2.5rem;
+}
+
+.profile-section:last-child {
+  margin-bottom: 0;
+}
+
+.profile-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary-light);
+  margin-bottom: 2rem;
+}
+
+.dark .profile-section h2 {
+  color: var(--text-primary-dark);
+}
+
+.profile-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--hover-light);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.profile.dark .more-link {
+  color: var(--hover-dark);
+}
+
+.more-link:hover {
+  gap: 0.75rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .profile-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+} 

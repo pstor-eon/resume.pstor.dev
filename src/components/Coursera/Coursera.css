@@ -1,0 +1,186 @@
+.coursera {
+  margin-bottom: 4rem;
+}
+
+.coursera h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary-light);
+  margin-bottom: 2rem;
+}
+
+.coursera.dark h2 {
+  color: var(--text-primary-dark);
+}
+
+.coursera-content {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--border-light);
+}
+
+.coursera.dark .coursera-content {
+  border-left-color: var(--border-dark);
+}
+
+.coursera-header {
+  margin-bottom: 1rem;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: var(--text-secondary-light);
+  display: block;
+}
+
+.coursera.dark .period {
+  color: var(--text-secondary-dark);
+}
+
+.coursera-summary {
+  color: var(--text-secondary-light);
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.coursera.dark .coursera-summary {
+  color: var(--text-secondary-dark);
+}
+
+.courses-section {
+  margin-top: 0.5rem;
+}
+
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--hover-light);
+  background: none;
+  border: none;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.coursera.dark .view-more-btn {
+  color: var(--hover-dark);
+}
+
+.view-more-btn:hover {
+  opacity: 0.8;
+}
+
+.courses-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  border-left: 2px solid var(--border-light);
+  padding-left: 1rem;
+}
+
+.coursera.dark .courses-list {
+  border-left-color: var(--border-dark);
+}
+
+.courses-list li {
+  color: var(--text-secondary-light);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.coursera.dark .courses-list li {
+  color: var(--text-secondary-dark);
+}
+
+.courses-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--text-secondary-light);
+}
+
+.coursera.dark .courses-list li::before {
+  color: var(--text-secondary-dark);
+}
+
+.coursera-content::before {
+  content: none;
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: var(--bg-light);
+  border: 2px solid var(--hover-light);
+  transition: all 0.3s ease;
+}
+
+.coursera.dark .coursera-content::before {
+  background-color: var(--bg-dark);
+  border-color: var(--hover-dark);
+}
+
+.coursera-content:hover::before {
+  transform: scale(1.2);
+}
+
+.courses-details {
+  margin-top: 1.5rem;
+}
+
+.specializations, .individual-courses {
+  margin-bottom: 2rem;
+}
+
+.specializations h3, .individual-courses h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary-light);
+  margin-bottom: 1.5rem;
+}
+
+.coursera.dark .specializations h3,
+.coursera.dark .individual-courses h3 {
+  color: var(--text-primary-dark);
+}
+
+.specialization-item, .university-section {
+  margin-bottom: 1.5rem;
+}
+
+.specialization-item h4,
+.year-section h4,
+.university-section h5 {
+  font-size: 1rem;
+  color: var(--text-primary-light);
+  margin-bottom: 0.75rem;
+}
+
+.coursera.dark .specialization-item h4,
+.coursera.dark .year-section h4,
+.coursera.dark .university-section h5 {
+  color: var(--text-primary-dark);
+}
+
+.year-section {
+  margin-bottom: 1.5rem;
+}
+
+.university-section {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.university-section:last-child {
+  margin-bottom: 0;
+} 

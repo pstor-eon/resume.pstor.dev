@@ -1,0 +1,90 @@
+.awards {
+  margin-bottom: 4rem;
+}
+
+.awards h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary-light);
+  margin-bottom: 2rem;
+}
+
+.awards.dark h2 {
+  color: var(--text-primary-dark);
+}
+
+.awards-content {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--border-light);
+}
+
+.awards.dark .awards-content {
+  border-left-color: var(--border-dark);
+}
+
+.award-item {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary-light);
+  list-style: none;
+  padding: 0;
+}
+
+.award-item:last-child {
+  margin-bottom: 0;
+}
+
+.award-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary-light);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.awards.dark .award-date {
+  color: var(--text-secondary-dark);
+}
+
+.award-title {
+  color: var(--text-primary-light);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.awards.dark .award-title {
+  color: var(--text-primary-dark);
+}
+
+.awards-content::before {
+  content: none;
+  position: absolute;
+  left: -4px;
+  top: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: var(--bg-light);
+  border: 2px solid var(--hover-light);
+  transition: all 0.3s ease;
+}
+
+.awards.dark .awards-content::before {
+  background-color: var(--bg-dark);
+  border-color: var(--hover-dark);
+}
+
+.awards-content:hover::before {
+  transform: scale(1.2);
+}
+
+.award-item::before {
+  display: none;
+}
+
+.dark .award-item::before {
+  display: none;
+} 

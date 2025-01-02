@@ -1,0 +1,88 @@
+.research {
+  margin-bottom: 4rem;
+}
+
+.research h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary-light);
+  margin-bottom: 2rem;
+}
+
+.research.dark h2 {
+  color: var(--text-primary-dark);
+}
+
+.research-content {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--border-light);
+}
+
+.research.dark .research-content {
+  border-left-color: var(--border-dark);
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-primary-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.research.dark .description {
+  color: var(--text-primary-dark);
+}
+
+.sub-description {
+  font-size: 1rem;
+  color: var(--text-secondary-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.research.dark .sub-description {
+  color: var(--text-secondary-dark);
+}
+
+.more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--hover-light);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.research.dark .more-link {
+  color: var(--hover-dark);
+}
+
+.more-link:hover {
+  gap: 0.75rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .research h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .research-content {
+    padding-left: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .sub-description {
+    font-size: 0.95rem;
+  }
+} 
