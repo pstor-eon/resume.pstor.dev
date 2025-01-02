@@ -37,7 +37,7 @@ const Projects = () => {
           links: [
             {
               label: "프로젝트 이야기",
-              url: "https://pstor.dev/pvc/"
+              url: "https://pstor.dev/project/scc/"
             },
             {
               label: "문제 보기",
@@ -77,7 +77,7 @@ const Projects = () => {
           links: [
             {
               label: "Project Story",
-              url: "https://pstor.dev/pvc/"
+              url: "https://pstor.dev/project/scc/"
             },
             {
               label: "More Challenges",
